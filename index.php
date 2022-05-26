@@ -28,6 +28,7 @@
             </ul>
         </nav>
     </div>
+    <!-- new change -->
     <section class="section1">
         <h2 class="prof">PROFESSIONAL DETAILS</h2>
         <img class="img" src="./img.jpeg" width="120" height="auto">
