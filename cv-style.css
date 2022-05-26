@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 15vh;
+    width: 100%;
+    padding: 0 8%;
+    background-color: blanchedalmond ;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+   width: 140px; 
+}
+
+.navlinks{
+    padding: 28px 0;
+}
+
+.navlinks li{
+    display: inline-flex;
+    margin: 0 15px;
+}
+
+.navlinks li a{
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    position: relative;
+}
+.navlinks li :hover{
+    color: chocolate;
+}
+
+.navlinks li a::after{
+    content: " ";
+    background-color: chocolate;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+
+}
+
+.navlinks li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    background: chocolate;
+    color: blanchedalmond;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background:black;
+    color: chocolate;
+}
+
+.header2{
+    height: 15vh;
+    width: 100%;
+    padding: 0 8%;
+    align-items: center;
+    justify-content: left;
+    display: inline-flex;
+    position: relative;
+}
+
+.resume{
+    font-size: xx-large;
+    padding: 0 30px;
+    text-decoration: none; 
+    display: inline-flex;
+    font-weight: bolder;
+}
+
+#edit{
+    background: blanchedalmond;
+    color: black;
+    padding: 10px;
+    border-radius: 0px;
+    cursor: pointer; 
+    display: inline-flex;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.section1{
+    background-color: blanchedalmond;
+    width: 32%;
+    margin-left: 10%;
+    padding-right: 10%;
+    padding: 10px;
+    border-radius: 0px;
+    height: 70vh;
+}
+.prof{
+    font-size: large;
+}
+.img{
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    
+}
+.p{
+    position: absolute;
+    top: 70%;
+    bottom: 0;  
+    font-size: small;
+}
+
+.section2{
+    width: 45%;
+    padding: 20px;
+    background-color: chocolate;
+    right: 0;
+    top: 30%;
+    position: absolute;
+    border-radius: 0px;
+    margin-right: 10%;
+    height: 70vh;
+}
+
+.abt{
+    font-size: medium;
+}
+
+.para{
+    position: absolute;
+    font-size: xx-small;
+    top: 20%;
+    bottom: 0;
+}
