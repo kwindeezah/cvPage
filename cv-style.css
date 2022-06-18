@@ -1,15 +1,39 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman';
     box-sizing: border-box;
 }
+
+.row::after {
+    content: " ";
+    clear: both;
+    display: contents;
+  }
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
 
 .header{
     height: 15vh;
     width: 100%;
     padding: 0 8%;
-    background-color: blanchedalmond ;
+    background-color: blanchedalmond;
 }
 
 nav{
@@ -84,8 +108,7 @@ nav{
 .resume{
     font-size: xx-large;
     padding: 0 30px;
-    text-decoration: none; 
-    display: inline-flex;
+    /* display: inline-flex; */
     font-weight: bolder;
 }
 
@@ -93,56 +116,156 @@ nav{
     background: blanchedalmond;
     color: black;
     padding: 10px;
-    border-radius: 0px;
     cursor: pointer; 
-    display: inline-flex;
     text-decoration: none;
-    margin: 5px 0;
+    /* display: inline-flex; */
+    /* margin: 5px 0; */
 }
-.section1{
+
+.col-4{
     background-color: blanchedalmond;
-    width: 32%;
-    margin-left: 10%;
-    padding-right: 10%;
-    padding: 10px;
     border-radius: 0px;
     height: 70vh;
+    padding: 15px;
 }
 .prof{
     font-size: large;
 }
 .img{
-    position: absolute;
-    top: 40%;
-    bottom: 0;
-    
+   top:38%;
+   position: absolute;
+   bottom: 0;  
+   left: 5px;
 }
-.p{
+.bold{
     position: absolute;
-    top: 70%;
+    top: 65%;
     bottom: 0;  
+    font-size: small;
+    left: 5px;
+}
+.span{
+    position: absolute;
+    right: 0;
+    top: 65%;
+    bottom: 0;
+    left: 10%;
     font-size: small;
 }
 
-.section2{
-    width: 45%;
-    padding: 20px;
+.col-8{
     background-color: chocolate;
-    right: 0;
-    top: 30%;
-    position: absolute;
     border-radius: 0px;
-    margin-right: 10%;
     height: 70vh;
+    padding: 15px;
 }
 
 .abt{
     font-size: medium;
 }
 
-.para{
+.bold2{
     position: absolute;
-    font-size: xx-small;
-    top: 20%;
+    top: 38%;
+    bottom: 0%;  
+    font-size: small;
+}
+
+.span2{
+    position: absolute;
+    right: 0;
+    top: 38%;
+    bottom: 0;
+    left: 50%;
+    font-size: small;
+}
+
+.bold3{
+    position: absolute;
+    top: 38%;
+    bottom: 0%; 
+    right: 0; 
+    left: 65%;
+    font-size: small; 
+}
+
+.span3{
+    position: absolute;
+    right: 0;
+    top: 38%;
+    bottom: 0;
+    left: 80%;
+    font-size: small;
+}
+
+.write{
+    position: absolute;
+    top: 60%;
     bottom: 0;
 }
+
+/* #line{
+    display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}  */
+
+hr{
+    display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.h1{
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.pas{
+    font-size: medium;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 770px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 780px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
